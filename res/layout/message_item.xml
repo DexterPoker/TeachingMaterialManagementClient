@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/messageTopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fileName"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/messageItemFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/messageFileTypeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/messageTopLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fileType"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/messageItemFileType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/messageItemDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageFileTypeLayout"
+        android:text="@string/fileDesc"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/messageItemDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageFileTypeLayout"
+        android:layout_toRightOf="@id/messageItemDescriptionText"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/messageBottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageItemDescription" >
+
+        <Button
+            android:id="@+id/messageItemDownlaod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            style="@style/ItemButton"
+            android:text="@string/download" />
+
+        <Button
+            android:id="@+id/messageItemSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            style="@style/ItemButton"
+            android:text="@string/support" />
+    </LinearLayout>
+
+</RelativeLayout>

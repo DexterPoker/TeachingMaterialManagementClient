@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:typeface="serif"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/commom_title" />
+
+    <LinearLayout
+        android:id="@+id/filenameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:text="@string/filename" />
+
+        <EditText
+            android:id="@+id/filename"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/chooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomButton"
+            android:text="@string/choose" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filetypeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filenameLayout"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:text="@string/fileType" />
+
+        <Spinner
+            android:id="@+id/fileType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            android:entries="@array/fileTypes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fileDescLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filetypeLayout"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:text="@string/fileDesc" />
+
+        <EditText
+            android:id="@+id/fileDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:maxLines="5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileDescLayout"
+        android:layout_marginTop="30dp"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomButton"
+            android:text="@string/upload" />
+    </LinearLayout>
+
+</RelativeLayout>

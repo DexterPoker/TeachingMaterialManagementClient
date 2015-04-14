@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.zucc.zql.teachingmaterialmanager.SelectClassActivity" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login"
+        android:scaleType="fitXY" >
+    </ImageView>
+    
+    <LinearLayout 
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <Button
+        android:id="@+id/buttonSelectBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            style="@style/CustomButton"
+        android:text="@string/confirm" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="@string/selectClass" />
+
+        <Spinner 
+            android:id="@+id/classes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            android:entries="@array/classes"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

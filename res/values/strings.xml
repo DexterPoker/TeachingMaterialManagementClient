@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">教材分享</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_id">账号:</string>
+    <string name="password">密码:</string>
+    <string name="login">登录</string>
+    <string name="title_activity_select_class">SelectClassActivity</string>
+    <string name="confirm">确定</string>
+    <string name="selectClass">请选择课程</string>
+    <string name="fileName">文件名称：</string>
+    <string name="fileType">文件类型：</string>
+    <string name="download">下载</string>
+    <string name="support">好评</string>
+    <string name="recommend">推荐</string>
+    <string name="loading">加载中...</string>
+    <string name="fileDesc">文件描述：</string>
+    <string name="fileDownload">下载次数：</string>
+    <string name="fileSupport">好评次数：</string>
+    <string name="uploader">上传者：</string>
+    <string name="uplaodTime">上传时间：</string>
+    <string name="collection">收藏</string>
+    <string name="edit">修改</string>
+    <string name="delete">删除</string>
+    <string name="ignore">忽略</string>
+    <string name="message">教师推荐</string>
+    <string name="me">我</string>
+    <string name="manager">已下载</string>
+    <string name="open">打开</string>
+    <string name="userName">用户名：</string>
+    <string name="userFile">上传文件数：</string>
+    <string name="switchClass">课程切换</string>
+    <string name="logout">用户登出</string>
+    <string name="passwordChange">密码修改</string>
+    <string name="passwordReset">密码重置</string>
+    <string name="userRegister">用户注册</string>
+    <string name="userLevel">权限修改</string>
+    <string name="resetToID">重置为ID</string>
+    <string name="randomReset">随机重置</string>
+    <string name="oldPassword">原密码：</string>
+    <string name="newPassword">新密码：</string>
+    <string name="cancel">取消</string>
+    <string name="classUserRegister">课程用户注册:</string>
+    <string name="classUserRegisters">课程多用户注册:</string>
+    <string name="systemUserRegister">系统用户注册:</string>
+    <string name="addUser">添加用户</string>
+    <string name="reset">重置</string>
+    <string name="filename">文件名称：</string>
+    <string name="choose">选择</string>
+    <string name="upload">上传</string>
+    <string name="stop">暂停</string>
+    <string name="userSystemRegister">系统用户注册</string>
+    <string name="userSystemDelete">系统用户删除</string>
+    <string name="className">课程名称:</string>
+    <string name="teacher">教师:</string>
+    <string name="master">主任:</string>
+    <string name="student">学生:</string>
+    <string name="classRegister">课程注册:</string>
+    <string name="studentId">学生编号:</string>
+    <string name="classUserAdd">课程用户添加</string>
+    <string name="classUserDelete">课程用户删除</string>
+    <string name="classDelete">课程删除</string>
+    <string name="classIdBefore">导入课程源:</string>
+    <string name="classFileReuse">课程文件复用</string>
+
+    <string-array name="classes">
+        <item>c</item>
+        <item>c++</item>
+        <item>c#</item>
+        <item>oc</item>
+    </string-array>
+    <string-array name="level">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
+    <string-array name="fileTypes">
+        <item>习题</item>
+        <item>教程</item>
+        <item>课件</item>
+        <item>工具</item>
+    </string-array>
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home_item_detail">HomeItemDetailActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_message_item_detail">MessageItemDetailActivity</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="title_activity_manager_item_detail">ManagerItemDetailActivity</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="title_activity_open_dialog">OpenDialogActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_change_level">ChangeLevelActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_processing">ProcessingActivity</string>
+    <string name="title_activity_system_register">SystemRegisterActivity</string>
+    <string name="title_activity_system_delete_user">SystemDeleteUserActivity</string>
+    <string name="title_activity_register_class">RegisterClassActivity</string>
+    <string name="title_activity_class_delete">ClassDeleteActivity</string>
+    <string name="title_activity_add_class_user_single">AddClassUserSingleActivity</string>
+    <string name="title_activity_delete_class_user">DeleteClassUserActivity</string>
+    <string name="title_activity_modify_file">ModifyFileActivity</string>
+    <string name="title_activity_modify_class">ModifyClassActivity</string>
+    <string name="title_activity_reuse_file">ReuseFileActivity</string>
+
+</resources>

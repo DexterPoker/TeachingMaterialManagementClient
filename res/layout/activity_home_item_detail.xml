@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include layout="@layout/detail_title"/>
+    
+    <LinearLayout
+        android:id="@+id/homeDetailFileNameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:text="@string/fileName" />
+
+            <TextView
+                android:id="@+id/homeDetailFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="#000000"/>
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailFileTypeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" 
+            android:layout_below="@id/homeDetailFileNameLayout"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fileType" 
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/homeDetailFileType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/homeDetailFileDescLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileTypeLayout"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fileDesc"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/homeDetailFileDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailFileDownloadLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileDescLayout"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fileDownload"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/homeDetailFileDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+                android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/homeDetailFileDownloadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/ItemButton"
+            android:text="@string/download" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailFileSupportLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileDownloadLayout"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/fileSupport"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/homeDetailFileSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/homeDetailFileSupportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/ItemButton"
+            android:text="@string/support" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailFileUploaderLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileSupportLayout"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/uploader"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/homeDetailFileUploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+                android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailFileUploadTimeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileUploaderLayout"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/uplaodTime"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/homeDetailFileUploadTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeDetailButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeDetailFileUploadTimeLayout"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/homeDetailCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ItemButton"
+            android:text="@string/collection" />
+
+        <Button
+            android:id="@+id/homeDetailEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ItemButton"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/homeDetailDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ItemButton"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/homeDetailRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/ItemButton"
+            android:text="@string/recommend" />
+    </LinearLayout>
+
+</RelativeLayout>

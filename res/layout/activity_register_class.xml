@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:typeface="serif"
+    tools:context="cn.edu.zucc.zql.teachingmaterialmanager.RegisterClassActivity" >
+
+    <include layout="@layout/commom_title"/>
+    
+    <LinearLayout 
+        android:id="@+id/registerClassClassNameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/className"/>
+        <EditText 
+            android:id="@+id/registerClassClassName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/registerClassTeacherLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerClassClassNameLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/teacher"/>
+        <Spinner
+            android:id="@+id/registerClassTeacher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            />
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:id="@+id/registerClassMasterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerClassTeacherLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/master"/>
+        <Spinner
+            android:id="@+id/registerClassMaster"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style"
+            />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerClassMasterLayout"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+        <Button 
+            android:id="@+id/registerClassSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomButton"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+</RelativeLayout>
